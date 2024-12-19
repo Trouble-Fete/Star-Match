@@ -5,8 +5,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home.tsx";
-import BabyRoom from "./pages/BabyRoom/BabyRoom.tsx";
-import Profiles from "./pages/Profiles/Profiles.tsx";
+// import BabyRoom from "./pages/BabyRoom/BabyRoom.tsx";
+// import Profiles from "./pages/Profiles/Profiles.tsx";
 
 const rootElement = document.getElementById("root");
 
@@ -15,14 +15,14 @@ const router = createBrowserRouter([
 		path: "/",
 		element: <Home />,
 	},
-	{
-		path: "/profiles",
-		element: <Profiles />,
-	},
-	{
-		path: "/babyroom",
-		element: <BabyRoom />,
-	},
+	// {
+	// 	path: "/profiles",
+	// 	element: <Profiles />,
+	// },
+	// {
+	// 	path: "/babyroom",
+	// 	element: <BabyRoom />,
+	// },
 ]);
 
 if (rootElement == null) {

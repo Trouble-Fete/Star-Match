@@ -1,0 +1,9 @@
+.headerHome {
+	background-image: url("../../assets/imageHeader.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	color: black;
+	width: 100%;
+}
