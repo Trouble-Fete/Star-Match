@@ -1,28 +1,24 @@
 import Card from "../Card/Card";
 import "./listCards.css";
 
-interface cardListProps {
-	cardList: {
-		imageUrl: string;
-		name: string;
-		birthYear: number;
-	};
+interface CardProps {
+	imageUrl: string;
+	name: string;
+	birth_year: number;
+	id: number;
 }
 
-function ListCards({ cardList }: cardListProps) {
-	const cards = cardList;
+export default function ListCards({ cardList }: { cardList: CardProps[] }) {
 	return (
 		<div id="listCards">
-			{cards.map((card: cardListProps["cardList"]) => (
+			{cardList.map((element) => (
 				<Card
-					key={card.id}
-					imageUrl={card.imageUrl}
-					name={card.name}
-					birthYear={card.birth_year}
+					key={element.id}
+					imageUrl={element.imageUrl}
+					name={element.name}
+					birthYear={element.birth_year}
 				/>
 			))}
 		</div>
 	);
 }
-
-export default ListCards;
