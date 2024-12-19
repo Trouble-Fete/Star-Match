@@ -7,17 +7,19 @@ interface CardProps {
 
 function Card({ imageUrl, name, birthYear }: CardProps) {
 	return (
-		<div id="card">
-			<div>
-				<img src={imageUrl} alt={name} />
-				<h3>{name}</h3>
-				<h3>Age : {5 - birthYear}</h3>
-			</div>
+		<article id="card" className="hover-bounce">
+			<section className="simpleCard">
+				<img className="imgCard" src={imageUrl} alt={name} />
+				<section className="paraCard">
+					<h3>{name}</h3>
+					<h4>Age : {5 - birthYear}</h4>
+				</section>
+			</section>
 			{/* <div id="descr">
-				gender taille poids species name classification average lifespan
-				homeworld name climat
+				gender taille poids species name classification average
+				homeworld
 			</div> */}
-		</div>
+		</article>
 	);
 }
 
