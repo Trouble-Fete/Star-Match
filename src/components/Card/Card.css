@@ -1,10 +1,22 @@
 #card {
-    border: 2px solid black;
     width: 200px;
     font: var(--font);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 153, 255, 0.541);
+    filter: drop-shadow(0 5px 10px rgb(0, 0, 0));
+    box-shadow: inset 0 0 15px 5px rgb(0, 0, 0);
+    text-align: center;
 
     img {
         width: 100%;
         min-height: max-content;
     }
+}
+
+#card.selected {
+    background-color: #00ff0d8f;
+    transform: scale(0.9);
+    box-shadow: inset 0 0 20px 10px rgb(0, 0, 0);
+
 }

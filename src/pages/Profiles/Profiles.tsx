@@ -13,7 +13,7 @@ export default function Profiles() {
 
 	return (
 		<div id="Profiles">
-			<ListCards cardList={characters} />
+			<ListCards cardList={characters} isSelectable={true} />
 		</div>
 	);
 }
