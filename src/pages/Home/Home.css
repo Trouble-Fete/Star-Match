@@ -1,9 +1,210 @@
-.headerHome {
-	background-image: url("../../assets/imageHeader.png");
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 80vh;
-	color: black;
-	width: 100%;
+/* * {
+	outline: 1px solid red;
+} */
+#home {
+	overflow-x: hidden;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-style: oblique;
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+	.headerHome {
+		background-image: url("../../assets/imageHeader.png");
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		border-radius: 0% 0% 0% 49% / 0% 0% 0% 61%;
+		height: 60vh;
+		color: black;
+		width: 100%;
+
+		.container1 {
+			display: flex;
+			flex-direction: column;
+			padding: 5rem 10rem;
+			color: white;
+
+			h1 {
+				font-size: 50px;
+				font-style: oblique;
+			}
+
+			article {
+				display: flex;
+				flex-direction: column;
+				width: 20rem;
+
+				button {
+					width: 8rem;
+					height: 3rem;
+					border-radius: 15px;
+					background-color: pink;
+					color: white;
+					font-weight: bold;
+					font-size: 20px;
+					border: none;
+				}
+			}
+		}
+	}
+	main {
+		h2 {
+			font-size: xx-large;
+			text-align: center;
+			margin: 5rem auto;
+		}
+		.topPage {
+			h3 {
+				font-size: 30px;
+				font-style: italic;
+			}
+			.grey {
+				color: grey;
+			}
+			.pink {
+				color: pink;
+			}
+			.article1 {
+				display: flex;
+				flex-direction: row;
+				width: 80%;
+				gap: 30px;
+				margin: 2rem auto;
+				.section1 {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.firstImage {
+					width: 30rem;
+				}
+			}
+			.article2 {
+				display: flex;
+				flex-direction: row-reverse;
+				width: 80%;
+				gap: 30px;
+				margin: 2rem auto;
+				border: 2px solid white;
+				box-shadow: 10px 5px 5px gray;
+				.section2 {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.secondImage {
+					width: 30rem;
+				}
+			}
+			button {
+				display: block;
+				color: white;
+				background-color: pink;
+				width: 15rem;
+				height: 3rem;
+				border-radius: 15px;
+				border: none;
+				margin: 0rem auto 10rem;
+			}
+		}
+		.midPage {
+			display: flex;
+			flex-direction: row;
+
+			.container3 {
+				width: 80%;
+				display: flex;
+				flex-direction: row;
+				border: 2px solid white;
+				box-shadow: -10px 5px 5px gray;
+				margin: 0 auto;
+				gap: 15rem;
+				.imageMid {
+					width: 30rem;
+					height: auto;
+				}
+				.box3 {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					.petit {
+						flex-wrap: wrap;
+						max-width: 100%;
+						height: auto;
+
+						img {
+							width: 10rem;
+							height: 10rem;
+						}
+						p {
+							width: 100%;
+						}
+					}
+					.doubleBouton {
+						display: flex;
+						flex-wrap: wrap;
+						max-width: 80%;
+						min-height: 10%;
+						margin: 0 auto;
+						gap: 30px;
+						justify-content: center;
+						align-items: center;
+						.b1,
+						.b2 {
+							border-radius: 15px;
+							min-width: 10rem;
+							height: 2rem;
+						}
+						.b1 {
+							background-color: white;
+							color: black;
+							border: 2px solid gray;
+						}
+						.b2 {
+							background-color: pink;
+							color: white;
+							border: none;
+						}
+					}
+				}
+			}
+		}
+		.bottomPage {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-evenly;
+
+			gap: 30px;
+			img {
+				max-width: 5rem;
+				max-height: 5rem;
+			}
+		}
+		.firstBrick,
+		.secondBrick,
+		.thirdBrick {
+			margin-top: 2rem;
+			max-width: 20rem;
+			max-height: 15rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.footer {
+			position: relative;
+			background-image: url("/src/assets/galaxie_etoile.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 25vh;
+			overflow: hidden; /* Empêche l'image de dépasser */
+		}
+	}
 }
