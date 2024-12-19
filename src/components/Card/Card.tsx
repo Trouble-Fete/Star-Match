@@ -13,10 +13,10 @@ function Card({ imageUrl, name, birthYear }: CardProps) {
 				<h3>{name}</h3>
 				<h3>Age : {5 - birthYear}</h3>
 			</div>
-			<div id="descr">
+			{/* <div id="descr">
 				gender taille poids species name classification average lifespan
 				homeworld name climat
-			</div>
+			</div> */}
 		</div>
 	);
 }
