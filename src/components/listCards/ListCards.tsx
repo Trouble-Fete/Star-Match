@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import "./listCards.css";
+import "./ListCards.css";
 
 interface CardProps {
 	imageUrl: string;
