@@ -1,29 +1,24 @@
 import Card from "../Card/Card";
-import { useState, useEffect } from "react";
 import "./listCards.css";
 
-function ListCards({ cardList }) {
-	// const cards = cardList;
-	const [characters, setCharacters] = useState([]);
+interface CardProps {
+	imageUrl: string;
+	name: string;
+	birth_year: number;
+	id: number;
+}
 
-	useEffect(() => {
-		fetch("https://starwarsapi.remote-8.wilders.dev/api/characters/original")
-			.then((res) => res.json())
-			.then((data) => setCharacters(data));
-	}, []);
-
+export default function ListCards({ cardList }: { cardList: CardProps[] }) {
 	return (
 		<div id="listCards">
-			{characters.map((card) => (
+			{cardList.map((element) => (
 				<Card
-					key={card.id}
-					imageUrl={card.imageUrl}
-					name={card.name}
-					birthYear={card.birth_year}
+					key={element.id}
+					imageUrl={element.imageUrl}
+					name={element.name}
+					birthYear={element.birth_year}
 				/>
 			))}
 		</div>
 	);
 }
-
-export default ListCards;
