@@ -1,4 +1,4 @@
-import ListCards from "../../components/listCards/ListCards";
+import ListCards from "../../components/ListCards/ListCards";
 import { useState, useEffect } from "react";
 import "./Profiles.css";
 
