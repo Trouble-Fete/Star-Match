@@ -5,7 +5,10 @@
 	display: flex;
 	justify-content: space-between; /* Espacement égal entre les colonnes */
 }
-
+.footer-logo {
+	height: 50px; /* Ajustez la taille de votre logo */
+	margin-right: 20px; /* Espacement entre le logo et la liste */
+}
 .footer-column {
 	flex: 1; /* Permet à chaque colonne de prendre une largeur égale */
 	margin: 0 15px; /* Espacement entre les colonnes */

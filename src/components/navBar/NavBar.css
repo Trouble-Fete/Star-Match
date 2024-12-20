@@ -1,7 +1,8 @@
 #navBar {
 	padding: 10px 20px;    /* Espacement interne */
-	position: sticky;      /* Fixe la navbar en haut lors du défilement */
-	top: 0;                /* Position en haut */
+	position: absolute;
+	top: 0;
+	left: 0;                /* Position en haut */
 	width: 100%;/* Prend toute la largeur */
 	display:flex; 
 	justify-content: space-between; /* Espacement des éléments */        
@@ -25,6 +26,7 @@
 	text-decoration: none; /* Supprime le soulignement */
 	color:black;          /* Couleur noir du texte */
 	font-size: 18px;       /* Taille du texte */
+	line-height: 2;        /* Augmente la hauteur des caractères */
 	transition: background-color 0.3s, color 0.3s; /* Animation fluide */
 }
 
