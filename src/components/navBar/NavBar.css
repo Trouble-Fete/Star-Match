@@ -1,48 +1,65 @@
 #navBar {
-	padding: 10px 20px;    /* Espacement interne */
-	position: sticky;      /* Fixe la navbar en haut lors du défilement */
-	top: 0;                /* Position en haut */
-	width: 100%;/* Prend toute la largeur */
-	display:flex; 
-	justify-content: space-between; /* Espacement des éléments */        
-	z-index: 1000;         /* Au-dessus des autres éléments */
+	padding: 10px 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1000;
 }
+
 .nav-logo {
-	height: 50px; /* Ajustez la taille de votre logo */
-	margin-right: 20px; /* Espacement entre le logo et la liste */
+	height: 50px;
+	/* Ajustez la taille de votre logo */
+	margin-right: 20px;
+	/* Espacement entre le logo et la liste */
 }
 
 /* Liste de navigation */
 .nav-list {
-	list-style: none;      /* Supprime les puces */
-	display: flex;         /* Disposition horizontale */
+	list-style: none;
+	/* Supprime les puces */
+	display: flex;
+	/* Disposition horizontale */
 	align-items: center;
 }
 
 /* Liens de navigation */
-.nav-list li  {
+.nav-list li {
 	padding: 0 5rem;
-	text-decoration: none; /* Supprime le soulignement */
-	color:black;          /* Couleur noir du texte */
-	font-size: 18px;       /* Taille du texte */
-	transition: background-color 0.3s, color 0.3s; /* Animation fluide */
+	text-decoration: none;
+	/* Supprime le soulignement */
+	color: black;
+	/* Couleur noir du texte */
+	font-size: 18px;
+	/* Taille du texte */
+	line-height: 2;
+	/* Augmente la hauteur des caractères */
+	transition: background-color 0.3s, color 0.3s;
+	/* Animation fluide */
 }
 
 /* Effet au survol */
 .nav-list li:hover {
-	background-color: #f50f0f; /* Fond légèrement plus clair */
-	color: #fff;           /* Assure que le texte reste blanc */
-	border-radius: 4px;    /* Coins arrondis */
+	background-color: #f50f0f;
+	/* Fond légèrement plus clair */
+	color: #fff;
+	/* Assure que le texte reste blanc */
+	border-radius: 4px;
+	/* Coins arrondis */
 }
 
 /* Responsiveness : Navigation empilée pour les petits écrans */
 @media (max-width: 768px) {
 	.nav-list {
-		flex-direction: column; /* Disposition verticale */
+		flex-direction: column;
+		/* Disposition verticale */
 		text-align: center;
 	}
 
 	.nav-list li {
-		margin: 10px 0; /* Espacement vertical */
+		margin: 10px 0;
+		/* Espacement vertical */
 	}
 }

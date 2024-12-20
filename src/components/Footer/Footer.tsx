@@ -3,6 +3,11 @@ import "./Footer.css";
 export default function Footer() {
 	return (
 		<div id="Footer">
+			<img
+				src="public/death-star-svgrepo-com.svg"
+				alt="Logo"
+				className="nav-logo"
+			/>
 			<div className="footer-column">
 				<h3>Company</h3>
 				<ul>
