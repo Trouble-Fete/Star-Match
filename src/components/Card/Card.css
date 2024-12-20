@@ -1,7 +1,12 @@
-#root {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,250;1,250&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
+
+:root {
 	--color-one: #dfd9dc;
 	--color-two: #8e1527;
 	--color-three: #463e6a;
+	--title-font-family: "Montserrat", serif;
+	--para-font-family: "Montserrat", serif;
 }
 
 #card {
@@ -42,9 +47,11 @@
 			gap: 5px;
 			h3 {
 				font-size: 1.3rem;
+				font-family: var(--title-font-family);
 			}
 			h4 {
 				font-size: 1rem;
+				font-family: var(--para-font-family);
 			}
 		}
 	}
