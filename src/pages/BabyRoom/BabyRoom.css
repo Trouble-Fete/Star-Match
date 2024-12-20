@@ -1,25 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Oldenburg&family=Tangerine:wght@400;700&display=swap');
 :root {
 	--primary-color: #8e1527;
 	--secondary-color: #463e6a;
 	--background-color: #dfd9dc;
 }
+
 body {
 	background-color: var(--background-color);
+	padding:0;
+	margin: 0;
 }
 
-h1{
+h1 {
 	display: flex;
 	justify-content: center;
 	padding: 20px;
 	color: var(--primary-color);
+	font-family: "Cinzel Decorative", serif;
+
 }
 
-
-h2{
+h2 {
 	display: flex;
 	justify-content: center;
-	padding: 20px
-color: var(--secondary-color);
+	padding: 20px;
+	font-family: "Cinzel Decorative", serif;
+
 }
 
 p {
@@ -28,63 +35,76 @@ p {
 	margin-bottom: 20px;
 }
 
-.Baby-Room-container {
+.container {
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 	align-items: center;
-	gap: 40px;
-
+	justify-content: space-evenly;
 }
 
-.Matched {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Matched-card {
+
+.photo {
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
 	width: 300px;
 	height: 400px;
 	border-radius: 10px;
 	object-fit: cover;
 	border: 2px solid #463e6a;
+} 
+
+/* /* Traits verticaux */
+.line {
+  width: 3px;
+  background-color: black;
+  height: 150px;
+} 
+
+.horizontal-line {
+  height: 2px;
+  background-color: black;
+  width: 100px; /* Longueur des lignes */
+  top: calc(100% + 150px); /* Aligner avec le bas des lignes verticales */
 }
 
-.button-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 180px;
+.horizontal-left {
+  left: 50%;
+  transform: translate(+50%, -50%);
 }
 
-.match-button {
-	color: var(--primary-color);
-	border: 1px solid #463e6a;
-	padding: 15px 50px;
-	font-size: 20px;
-	cursor: pointer;
-	cursor: pointer;
-	transition: 0.3s ease;
-	border-radius: 10px;
-	border-color: #463e6a;
-
+.horizontal-right {
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.match-button:hover {
-	background-color: #463e6a;
-
+/* 
+.button {
+  position: absolute;
+  transform: translateY(50%);
+  padding: 60px 40px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+ */
 
-.baby-photo-container {
-	display: flex;
-	justify-content: center;
+
+/* .baby-photo-container {
+	margin-top: 20px;
 }
 
 .baby-photo {
 	width: 300px;
-	height: 400px;
+	height: auto;
 	border-radius: 10px;
-	object-fit: cover;
-	margin-top: 50px;
 	border: 1px solid #463e6a;
 }
+ */
