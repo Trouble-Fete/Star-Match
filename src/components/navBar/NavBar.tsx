@@ -22,10 +22,10 @@ export default function NavBar() {
 				/>
 			</svg>
 			<ul className="nav-list">
-				<Link to={"/"}>
+				<Link className="Link" to={"/"}>
 					<li>Home</li>
 				</Link>
-				<Link to={"/Profiles"}>
+				<Link className="Link" to={"/Profiles"}>
 					<li>Matches</li>
 				</Link>
 				<li>About Us</li>

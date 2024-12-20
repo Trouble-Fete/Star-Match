@@ -27,3 +27,14 @@
 		font-size: 1.75rem;
 	}
 }
+#navBar {
+	.nav-list {
+		.Link {
+			text-decoration: none;
+		}
+
+		li {
+			color: black;
+		}
+	}
+}
