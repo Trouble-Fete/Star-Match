@@ -1,16 +1,3 @@
 #Profiles {
-<<<<<<< HEAD
 	background-color: #dfd9dc;
 }
-=======
-    background-color: grey;
-
-    #listCards {
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-}
->>>>>>> profiles.1
