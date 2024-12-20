@@ -13,6 +13,9 @@ export default function Profiles() {
 
 	return (
 		<div id="Profiles">
+			<section className="consigne">
+				<p>Consigne : Il faut sélectionner deux cartes.</p>
+			</section>
 			<ListCards cardList={characters} isSelectable={true} />
 		</div>
 	);

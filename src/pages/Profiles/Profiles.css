@@ -1,3 +1,7 @@
 #Profiles {
 	background-color: #dfd9dc;
+	.consigne {
+		padding-top: 80px;
+		color: #463e6a;
+	}
 }
