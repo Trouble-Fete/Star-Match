@@ -121,11 +121,11 @@ function Home() {
 						</p>
 					</div>
 				</section>
-				<img
+				{/* <img
 					className="footer"
 					src="/src/assets/galaxie_etoile.jpg"
 					alt="galaxie"
-				/>
+				/> */}
 			</main>
 		</div>
 	);

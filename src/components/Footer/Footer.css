@@ -1,9 +1,18 @@
 /* Footer styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,250;1,250&display=swap");
+:root {
+	--title-font-family: "Montserrat", serif;
+}
+
 #Footer {
-	background-color: #f4f4f4;
+	background-image: url(/src/Assets/galaxie_etoile.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
 	padding: 20px 40px;
 	display: flex;
 	justify-content: space-between; /* Espacement égal entre les colonnes */
+	font-family: var(--title-font-family);
 }
 .footer-logo {
 	height: 50px; /* Ajustez la taille de votre logo */
@@ -17,7 +26,7 @@
 .footer-column h3 {
 	margin-bottom: 10px;
 	font-size: 18px;
-	color: #333;
+	color: #dfd9dc;
 }
 
 .footer-column ul {
@@ -29,7 +38,7 @@
 .footer-column ul li {
 	margin-bottom: 8px;
 	font-size: 14px;
-	color: #555;
+	color: #dfd9dc;
 	cursor: pointer;
 }
 

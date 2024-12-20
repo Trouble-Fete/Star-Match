@@ -1,40 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,250;1,250&display=swap");
+
+:root {
+	--title-font-family: "Montserrat", serif;
+}
+
 #navBar {
-	padding: 10px 20px;    /* Espacement interne */
+	padding: 10px 10px;
 	position: absolute;
 	top: 0;
-	left: 0;                /* Position en haut */
-	width: 100%;/* Prend toute la largeur */
-	display:flex; 
-	justify-content: space-between; /* Espacement des éléments */        
-	z-index: 1000;         /* Au-dessus des autres éléments */
+	left: 0; /* Position en haut */
+	width: 100%; /* Prend toute la largeur */
+	display: flex;
+	justify-content: space-between; /* Espacement des éléments */
+	z-index: 1000; /* Au-dessus des autres éléments */
 }
 .nav-logo {
 	height: 50px; /* Ajustez la taille de votre logo */
-	margin-right: 20px; /* Espacement entre le logo et la liste */
 }
 
-/* Liste de navigation */
 .nav-list {
-	list-style: none;      /* Supprime les puces */
-	display: flex;         /* Disposition horizontale */
-	align-items: center;
+	list-style: none; /* Supprime les puces */
+	display: flex; /* Disposition horizontale */
+	align-items: end;
+	margin-right: 2rem;
+
+	li {
+		text-align: center;
+		padding: 7px 1rem;
+		margin: 0 10px;
+		text-decoration: none; /* Supprime le soulignement */
+		color: #dfd9dc; /* Couleur noir du texte */
+		font-family: var(--title-font-family);
+		font-size: 1rem; /* Taille du texte */
+		line-height: 2; /* Augmente la hauteur des caractères */
+		transition: all 0.2s ease;
+		cursor: pointer;
+	}
 }
 
 /* Liens de navigation */
-.nav-list li  {
-	padding: 0 5rem;
-	text-decoration: none; /* Supprime le soulignement */
-	color:black;          /* Couleur noir du texte */
-	font-size: 18px;       /* Taille du texte */
-	line-height: 2;        /* Augmente la hauteur des caractères */
-	transition: background-color 0.3s, color 0.3s; /* Animation fluide */
-}
 
 /* Effet au survol */
 .nav-list li:hover {
-	background-color: #f50f0f; /* Fond légèrement plus clair */
-	color: #fff;           /* Assure que le texte reste blanc */
-	border-radius: 4px;    /* Coins arrondis */
+	backdrop-filter: blur(10px);
+	background-color: #dfd9dc17;
+	color: #fff; /* Assure que le texte reste blanc */
+	transition: transform 5s ease;
+	border-radius: 10px; /* Coins arrondis */
 }
 
 /* Responsiveness : Navigation empilée pour les petits écrans */
