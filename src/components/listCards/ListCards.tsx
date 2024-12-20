@@ -26,8 +26,6 @@ export default function ListCards({
 
 	return (
 		<div>
-			<div>Cartes sélectionnées : {selectedCount}</div>
-			<div>ID sélectionnés : {selectedIds.join(", ")}</div>
 			<div id="listCards">
 				{cardList.map((element) => (
 					<Card
