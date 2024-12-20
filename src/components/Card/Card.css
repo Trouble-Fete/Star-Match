@@ -52,7 +52,7 @@
 }
 
 .hover-bounce:hover {
-	animation: bounce 1s forwards; /* Une seule fois */
+	animation: bounce 0.7s forwards; /* Une seule fois */
 }
 
 @keyframes bounce {
