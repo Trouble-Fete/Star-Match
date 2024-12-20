@@ -1,3 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,250;1,250&display=swap");
+
+:root {
+	--title-font-family: "Montserrat", serif;
+}
+
 #navBar {
-    background-color: blue;
+	padding: 10px 10px;
+	position: absolute;
+	top: 0;
+	left: 0; /* Position en haut */
+	width: 100%; /* Prend toute la largeur */
+	display: flex;
+	justify-content: space-between; /* Espacement des éléments */
+	z-index: 1000; /* Au-dessus des autres éléments */
+
+	.nav-logo {
+		height: 50px; /* Ajustez la taille de votre logo */
+	}
+
+	.nav-list {
+		list-style: none; /* Supprime les puces */
+		display: flex; /* Disposition horizontale */
+		align-items: end;
+		margin-right: 2rem;
+		.Link {
+			li {
+				text-align: center;
+				padding: 7px 1rem;
+				margin: 0 10px;
+				text-decoration: none; /* Supprime le soulignement */
+				color: #dfd9dc; /* Couleur noir du texte */
+				font-family: var(--title-font-family);
+				font-size: 1rem; /* Taille du texte */
+				line-height: 2; /* Augmente la hauteur des caractères */
+				transition: all 0.2s ease;
+				cursor: pointer;
+			}
+		}
+	}
+
+	/* Liens de navigation */
+
+	/* Effet au survol */
+	.nav-list li:hover {
+		backdrop-filter: blur(10px);
+		background-color: #dfd9dc17;
+		color: #fff; /* Assure que le texte reste blanc */
+		transition: transform 5s ease;
+		border-radius: 10px; /* Coins arrondis */
+	}
+
+	/* Responsiveness : Navigation empilée pour les petits écrans */
+	@media (max-width: 768px) {
+		.nav-list {
+			flex-direction: column; /* Disposition verticale */
+			text-align: center;
+		}
+
+		.nav-list li {
+			margin: 10px 0; /* Espacement vertical */
+		}
+	}
 }
