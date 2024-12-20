@@ -57,7 +57,7 @@ export default function BabyRoom() {
 
 			<div className="button-container">
 				<button type="button" onClick={handleButtonClick}>
-					Clique ici pour voir le bb{" "}
+					Show your Baby{" "}
 				</button>
 			</div>
 			{showImage && (

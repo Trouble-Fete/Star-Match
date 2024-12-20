@@ -31,10 +31,9 @@
 	.nav-list {
 		.Link {
 			text-decoration: none;
-		}
-
-		li {
-			color: black;
+			li {
+				color: black;
+			}
 		}
 	}
 }

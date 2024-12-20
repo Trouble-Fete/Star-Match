@@ -28,7 +28,9 @@ export default function NavBar() {
 				<Link className="Link" to={"/Profiles"}>
 					<li>Matches</li>
 				</Link>
-				<li>About Us</li>
+				<Link className="Link" to={"/"}>
+					<li>About Us</li>
+				</Link>
 				<Button text="Join the Adventure" />
 			</ul>
 		</nav>
