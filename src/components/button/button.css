@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,250;1,250&display=swap");
+:root {
+	--para-font-family: "Montserrat", serif;
+}
+
+button {
+	background-color: #463e6a;
+	border-radius: 15px;
+	color: white;
+	width: 10rem;
+	height: 3rem;
+	border: none;
+	font-family: var(--para-font-family);
+}

@@ -1,4 +1,6 @@
+import Button from "../../components/button/button";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
 	return (
@@ -12,7 +14,7 @@ function Home() {
 							Embark on a cosmic journey to find your soulmate in the vast
 							expanse of the Star Wars universe
 						</p>
-						<button type="button">Join now</button>
+						<Button text="Join Now" />
 					</article>
 				</section>
 			</header>
@@ -60,7 +62,9 @@ function Home() {
 							</p>
 						</section>
 					</article>
-					<button type="button">Connect Now</button>
+					<Link to={"/profiles"}>
+						<Button text="View Profiles" />
+					</Link>
 				</section>
 
 				<h2>Discover Your Intestellar Destiny</h2>
@@ -85,12 +89,8 @@ function Home() {
 							<p>Forge Unbreakable Bonds Across the Galaxy</p>
 
 							<div className="doubleBouton">
-								<button className="b1" type="button">
-									Connect Now
-								</button>
-								<button className="b2" type="button">
-									Join the Adventure
-								</button>
+								<Button text="Connect Now" />
+								<Button text="Join the Adventure" />
 							</div>
 						</div>
 					</article>
