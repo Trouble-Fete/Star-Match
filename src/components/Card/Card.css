@@ -19,6 +19,8 @@
 	border-right: 1px solid rgb(58, 57, 57);
 	border-bottom: 2px solid rgb(63, 62, 62);
 	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+	cursor: pointer;
+	transition: transform 0.2s ease;
 	.simpleCard {
 		width: 200px;
 		font: var(--font);
@@ -63,4 +65,9 @@
 	50% {
 		transform: translateY(-5px);
 	}
+}
+
+#card.selected {
+	transform: scale(0.9);
+	filter: grayscale(100%);
 }
