@@ -8,11 +8,17 @@ interface CardProps {
 	birth_year: number;
 	id: number;
 }
+interface ListCardsProps {
+	cardList: CardProps[];
+	isSelectable: boolean;
+	onCardSelection: (isSelected: boolean, cardId: number) => void;
+}
 
 export default function ListCards({
 	cardList,
 	isSelectable,
-}: { cardList: CardProps[]; isSelectable: boolean }) {
+	onCardSelection,
+}: ListCardsProps) {
 	const [selectedCount, setSelectedCount] = useState(0);
 
 	const [selectedIds, setSelectedIds] = useState<number[]>([]);
@@ -22,6 +28,7 @@ export default function ListCards({
 		setSelectedIds((prevIds) =>
 			isSelected ? [...prevIds, cardId] : prevIds.filter((id) => id !== cardId),
 		);
+		onCardSelection(isSelected, cardId);
 	};
 
 	return (
